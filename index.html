@@ -1,11 +1,120 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Página</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
 
-  <p>
-teste
-  </p>
+        #header {
+
+            background-color: #333;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #header .profile-image {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            transition: transform 0.5s;
+        }
+
+        #header .profile-image:hover {
+            transform: rotate(360deg);
+            content: url('raphael1.jpg'); 
+        }
+
+        #menu {
+            background-color: #333;
+            display: flex;
+            justify-content: right;
+            padding-right: 5%;
+        }
+
+        #menu a {
+            text-decoration: none;
+            color: white;
+            padding: 10px 20px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            border: 1px solid #444;
+        }
+
+        #menu a:hover {
+            background-color: #555;
+        }
+
+        #content {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #sobre {
+            width: 80%;
+        }
+
+        #blocos {
+            width: 20%;
+            text-align: right;
+            margin-right: 5%;
+            padding-top: 5%;
+        }
+        #icon-svg {
+            width: 30px;
+            height: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img class="profile-image" src="raphael.png" alt="Minha Foto">
+    </div>
+    <div id="menu">
+        <a href="#">Home</a>
+        <a href="#">Experiencias</a>
+        <a href="#">Soft Skill</a>
+        <a href="#">Cases</a>
+        <a href="#">Projetos</a>
+    </div>
+    <div id="content">
+        <div id="sobre">
+            <h2>SOBRE</h2>
+            <div>
+                <p>Especialista de TI experiente em Monitoramento Zabbix, automação com Python e Shell, expertise em Grafana e linguagens como HTML e CSS. Líder em infraestrutura com habilidades em redes, Zabbix, Grafana, Dynatrace e metodologias ágeis. Comunicativo, colaborativo e comprometido com soluções inovadoras. Acredita que o equilibrio entre habilidades técnicas e interpessoais são a chave para o sucesso.</p>
+            </div>
+        </div>
+        <div id="blocos">
+            <div>
+                <a href="https://www.linkedin.com/in/raphael-rezende-dos-santos-rocha-a21315117/" target="_blank" rel="noopener noreferrer me" title="Linkedin">
+                  <svg id="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a>
+            </div>
+            <div>
+                <a href="https://github.com/rocha-raphael" target="_blank" rel="noopener noreferrer me" title="Github">
+                  <svg id="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"></path></svg></a>
+            </div>
+            <div>
+            <a href="mailto:raphael90.rocha@gmail.com" target="_blank" rel="noopener noreferrer me" title="Email">
+                <svg id="icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 21" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 4h16c1.1.0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1.0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
+
