@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#header {
+    background-color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header .profile-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #6B46C1;
+    transition: transform 0.5s;
+}
+
+#header .profile-image:hover {
+    transform: rotate(360deg);
+    content: url('img/raphael1.jpg');
+    border-bottom: 2px solid #4B0082;
+}
+
+#menu {
+    background-color: #333;
+    display: flex;
+    justify-content: right;
+    padding-right: 5%;
+}
+
+#menu .button {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid #444;
+}
+
+#menu .button:hover {
+    background-color: #555;
+}
+
+#content-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+#content {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Oxygen, Ubuntu, Cantarell, open sans, helvetica neue, sans-serif;
+}
+
+#blocos {
+    width: 20%;
+    text-align: right;
+    margin-top: 0%;
+    margin-right: 5%;
+    padding-top: 0%;
+}
+
+#icon-svg {
+    width: 30px;
+    height: 30px;
+}
+
+.frame {
+    border: none; 
+    width: 100%; 
+    min-height: 400px;
+    overflow: hidden;
+}
+.button {
+    background-color: #333;
+    padding: 10px 20px; /* Adicione preenchimento para ajustar o tamanho do botão */
+
+}
+
+.button:hover {
+    color: black;
+    background-color: #555;
+}
+
+.active {
+    text-transform: uppercase;
+    transform: translateY(2px);
+    font-weight: bold;
+    background-color: #333;
+    
+}
+
+.content {
+    margin: 0% 5% 0% 5%;
+    display: none; /* Oculta todos os conteúdos */
+}
+
+#content1 {
+    display: block; /* Exibe apenas o conteúdo inicial */
+}
+
+@media screen and (max-width: 600px) {
+    .button {
+        padding: 0px 0px;
+        font-size: 6px; /* Reduza o tamanho da fonte em telas menores, se necessário */
+    }
+}
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Alinhar horizontalmente ao centro */
+}
+
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 600px; /* Largura do carrossel */
+    margin: 0 auto;
+    justify-content: center; /* Alinhar horizontalmente ao centro */
+    align-items: center; /* Alinhar verticalmente ao centro */
+}
+
+.slide {
+    display: flex;
+
+    justify-content: center; /* Alinhar horizontalmente ao centro */
+    align-items: center; /* Alinhar verticalmente ao centro */
+}
+
+.slide img {
+    width: 400px; /* Defina a largura desejada para todas as imagens */
+    height: 200px; /* Defina a altura desejada para todas as imagens */
+    justify-content: center; /* Alinhar horizontalmente ao centro */
+    align-items: center; /* Alinhar verticalmente ao centro */
+
+}
+
+.btn-container {
+    display: flex;
+}
+
+.btn-slide {
+    cursor: pointer;
+    padding: 5px 10px; /* Tamanho menor */
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 10px; /* Cantos arredondados */
+    margin: 5px;
+}
+
+.btn-slide:hover {
+    background-color: #555;
+}
+
